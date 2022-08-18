@@ -14,7 +14,7 @@
  */
 
 function palindrome(str) {
-  let str_mod = '';
+  let strMod = '';
   for (i = 0; i < str.length; i++) {
     if (
       str.slice(i, i + 1) !== ' ' &&
@@ -25,17 +25,17 @@ function palindrome(str) {
       str.slice(i, i + 1) !== '/' &&
       str.slice(i, i + 1) !== '-'
     ) {
-      str_mod = str_mod + str.slice(i, i + 1);
+      strMod = strMod + str.slice(i, i + 1);
     }
   }
 
   let rts = '';
-  for (i = 0; i < str_mod.length; i++) {
+  for (i = 0; i < strMod.length; i++) {
     rts =
       rts +
-      str_mod.toLowerCase().slice(str_mod.length - 1 - i, str_mod.length - i);
+      strMod.toLowerCase().slice(strMod.length - 1 - i, strMod.length - i);
   }
-  return str_mod.toLowerCase() === rts;
+  return strMod.toLowerCase() === rts;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
