@@ -17,7 +17,6 @@ function palindrome(str) {
   let rts = '';
   for (i = 0; i < str.length; i++) {
     rts = rts + str.toLowerCase().slice(str.length - 1 - i, str.length - i);
-    //return str.slice(i, 1 + i);
   }
   return rts === str.toLowerCase();
 }
