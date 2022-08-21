@@ -6,10 +6,13 @@
  * порядке.Если в строке есть знаки препинания, их можно удалить
  * или оставить — на ваше усмотрение.
  *
-*/
+ */
 
 function reverseWords(str) {
-    // Напишите код здесь
+  const arrStr = str.split(' ');
+  let arrStrInvers = [];
+  arrStr.map((el) => arrStrInvers.unshift(el));
+  return arrStrInvers.join(' ');
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
