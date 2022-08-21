@@ -29,13 +29,13 @@ function palindrome(str) {
     }
   }
 
-  let rts = '';
+  let strInv = '';
   for (i = 0; i < strMod.length; i++) {
-    rts =
-      rts +
+    strInv =
+    strInv +
       strMod.toLowerCase().slice(strMod.length - 1 - i, strMod.length - i);
   }
-  return strMod.toLowerCase() === rts;
+  return strMod.toLowerCase() === strInv;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
