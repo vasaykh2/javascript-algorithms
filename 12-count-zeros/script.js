@@ -7,11 +7,12 @@
  */
 
 function countZeros(n) {
-  let arr = [];
+  const arr = [];
   for (i = 0; i < n; i++) {
     arr[i] = i + 1;
   }
-  return arr.join('')
+  return arr
+    .join('')
     .split('')
     .reduce((res, el) => {
       if (el === '0') {
